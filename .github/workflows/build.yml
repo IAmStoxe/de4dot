@@ -35,7 +35,7 @@ jobs:
         with:
           name: de4dot-net45
           path: Release/net45
-
+ 
       - uses: actions/upload-artifact@v1
         if: github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/tags/')
         with:
